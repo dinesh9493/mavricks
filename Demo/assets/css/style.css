@@ -1,0 +1,24 @@
+header, footer {
+    text-align: center;
+}
+
+.profile-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+main {
+    min-height: 80vh;
+}
+
+.form-wrapper, .table-wrapper {
+    margin: 20px;
+}
+
+.form-label, .form-element {
+    margin-top: 10px;
+}
+
+.form-label {
+    text-align: right;
+}

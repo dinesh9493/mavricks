@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Mavricks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="./assets/css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome to Mavricks Team</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Registration Form Section -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 form-wrapper">
+                    <h2>Member Registration Form</h2>
+                </div>
+            </div>
+            <form id="registration-form">
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        First Name :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <input type="text" name="firstName" id="firstName" onkeypress="validateFirstName(event)" onblur="validateFirstName(event)"  required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        Last Name :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <input type="text" name="lastName" id="lastName" onkeypress="validateLastName(event)" onblur="validateLastName(event)" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        Email :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <input type="email" name="email" id="email" onkeypress="validateEmail(event)" onblur="validateEmail(event)" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        Phone :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <input type="number" name="phone" id="phone" onkeypress="validatePhone(event)" onblur="validatePhone(event)" required/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        About :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <textarea name="about" id="about" onkeypress="validateAbout(event)" onblur="validateAbout(event)" required></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 form-label">
+                        Profile :
+                    </div>
+                    <div class="col-md-9 form-element">
+                        <input type="file" name="profile" id="profile" onkeypress="validateProfile(event)" onblur="validateProfile(event)" required/>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-3 form-label"></div>
+                    <div class="col-md-9 form-element">
+                        <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+
+        <!-- List of Mavrick members -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 table-wrapper">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Phone</th>
+                                <th scope="col">About</th>
+                                <th scope="col">Profile Picture</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mavrick-table-body">
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="4" style="text-align: right;">Total Members</td>
+                                <td id="total-team-members">0</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>&copy; <span id="year"></span> Team Mavricks &reg;</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Script Section -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+        <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
