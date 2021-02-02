@@ -27,15 +27,3 @@ function deleteRow(rowId) {
     storeItinLocalOrSessionStorage(storageType, keyNameOftableDataInStorage, JSON.stringify(teamList));
     populateTheTable();
 }
-
-
-/* 2) Array Functions 
-  filter()
-  findIndex()
-  forEach()
-  indexOf()
-  
-  pop(), shift()
-  push(), unshift()
-  
-  splice() */
