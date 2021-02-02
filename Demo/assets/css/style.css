@@ -22,3 +22,12 @@ main {
 .form-label {
     text-align: right;
 }
+.trash-icon {
+    max-width: 40px;
+    max-height: 40px;
+    cursor: pointer;
+}
+
+.trash-icon img {
+    max-width: 100%;
+}

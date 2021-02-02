@@ -18,7 +18,7 @@ function initiate() {
 function register(formData) {
     teamList.push(formData);
     let temp = JSON.stringify(teamList);
-    storeItinLocalOrSessionStorage("session", "mavrick_team_list", temp);
+    storeItinLocalOrSessionStorage(storageType, keyNameOftableDataInStorage, temp);
     populateTheTable();
     resetForm();
 }
